@@ -1,0 +1,29 @@
+Rất tốt! Dựa trên cấu trúc thư mục bạn chia sẻ (dự án Vite React), mình sẽ chỉ rõ **các file bạn có thể xóa nếu không cần thiết**, và **các file nên giữ lại** để dự án vẫn chạy tốt.
+
+---
+
+### ✅ **Giữ lại các file này để app React hoạt động ổn định:**
+
+- `src/` (toàn bộ thư mục này, bạn sẽ code ở đây)
+  - `main.jsx` → **rất quan trọng**
+  - `App.jsx` → là component chính
+  - `index.css`, `App.css` → dùng cho style (có thể sửa, nhưng không xóa nếu đang dùng)
+- `index.html` → trang HTML chính để mount React
+- `vite.config.js` → cấu hình vite
+- `package.json`, `package-lock.json` → bắt buộc để npm hoạt động
+- `.gitignore` → không ảnh hưởng chạy, nhưng nên giữ nếu dùng Git
+
+---
+
+### ❌ **Các file bạn CÓ THỂ XÓA nếu không dùng đến:**
+
+| File / Thư mục            | Có thể xóa khi nào?                                                                 |
+|---------------------------|--------------------------------------------------------------------------------------|
+| `src/assets/`             | Nếu **bạn không sử dụng ảnh/logo từ thư mục này**, có thể xóa                       |
+| `App.css` / `index.css`   | Nếu bạn **viết CSS riêng** hoặc xài Bootstrap, Tailwind... có thể xóa hoặc thay thế |
+| `vite.svg` trong `public/`| Đây là ảnh logo mặc định, không cần thiết nếu bạn thay logo riêng                    |
+| `README.md`               | Chỉ để ghi chú, có thể xóa nếu không cần                                             |
+| `eslint.config.js`        | Nếu bạn **không dùng ESLint**, có thể xóa (không ảnh hưởng build)                   |
+
+---
+
