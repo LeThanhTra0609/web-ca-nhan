@@ -1,42 +1,85 @@
-#root {
-  max-width: 1280px;
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e; /* màu tối hơn để dịu mắt hơn #333 */
+  color: #f0f0f0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/*
+================= LINK =================
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-secondary);
+}
+
+================= CONTAINER =================
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 1rem;
+}
+
+================= BUTTON =================
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: var(--accent-primary);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff6b81;
+}
+
+================= HEADING =================
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+================= UTILITIES =================
+.text-center {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+
+.pt-4 { padding-top: 1rem; }
+.pb-4 { padding-bottom: 1rem; }
+
+================= RESPONSIVE GRID =================
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.col {
+  flex: 1;
+  padding: 0.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+================= CUSTOM VARIABLES =================
+:root {
+  --accent-primary: #ff4757;
+  --accent-secondary: #70a1ff;
 }
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+*/
