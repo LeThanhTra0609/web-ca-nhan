@@ -1,0 +1,249 @@
+.home-page {
+  margin-top: 100px; /* * Khoảng cách phía trên của trang chủ */
+}
+
+/* * Phần lọc ghi chú */
+.filter-section {
+  background-color: #2d2d2d; /* * Màu nền tối cho section lọc */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* * Đổ bóng nhẹ */
+}
+
+/* * Thẻ note chính */
+.note-card {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* * Bóng nổi */
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 1.5rem;
+  background-color: #252526;
+  border: 1px solid #3e3e42;
+  height: 100%; /* * Đảm bảo cùng chiều cao */
+  display: flex;
+  flex-direction: column;
+}
+
+.note-card:hover {
+  transform: translateY(-5px); /* * Hiệu ứng khi hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  border-color: #4e4e52;
+}
+
+/* * Nội dung trong thẻ */
+.card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* * Cho phép nội dung mở rộng */
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  min-height: 3rem; /* * Cố định chiều cao tiêu đề */
+}
+
+.card-text {
+  margin-bottom: 0.75rem;
+  color: #d0d0d0;
+  flex-grow: 1; /* * Văn bản mở rộng để chiếm không gian */
+}
+
+/* * Trạng thái */
+.text-success {
+  color: #4ec9b0 !important; /* * Màu xanh cho trạng thái thành công */
+}
+
+.text-warning {
+  color: #d7ba7d !important; /* * Màu vàng cho trạng thái cảnh báo */
+}
+
+/* * Nút thêm ghi chú */
+.btn-add-note {
+  background-color: #0e639c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.3rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-add-note:hover {
+  background-color: #1177bb;
+  color: white;
+}
+
+/* * Container cho thẻ phụ */
+.tags-container {
+  min-height: 2.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.deadline-container {
+  min-height: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.status-container {
+  min-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* * Các nút hành động dưới cùng của thẻ */
+.card-actions {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  border-top: 1px solid #3e3e42;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* * Style cho các nút hành động */
+.btn-action {
+  background: none;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+  font-size: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+/* * Icon và hover riêng biệt cho từng loại */
+.btn-check {
+  color: #4ec9b0;
+}
+.btn-check:hover {
+  background-color: rgba(78, 201, 176, 0.1);
+}
+
+.btn-edit {
+  color: #4dabf7;
+}
+.btn-edit:hover {
+  background-color: rgba(77, 171, 247, 0.1);
+}
+
+.btn-delete {
+  color: #f48771;
+}
+.btn-delete:hover {
+  background-color: rgba(244, 135, 113, 0.1);
+}
+
+.action-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* * Responsive: Grid cho các thiết bị lớn */
+@media (min-width: 1200px) {
+  .note-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* * 4 cột */
+    gap: 1.5rem;
+  }
+}
+
+/* * Responsive: Grid cho tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .note-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* * 2 cột */
+    gap: 1.5rem;
+  }
+}
+
+/* * Hiển thị thời hạn */
+.deadline-text {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  gap: 0.5rem;
+}
+
+/* * Style cho tag */
+.tag-badge {
+  display: inline-block;
+  background-color: #3a3d41;
+  color: #b7b7b7;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* * Style cho loại ghi chú */
+.type-label {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* * TYPE COLOR STYLES */
+/*? ------------------------------- */
+/* * Reminder - Màu xanh sáng, nhẹ */
+.type-reminder {
+  background-color: #2d7fcf; /* Màu nền: Xanh sáng */
+  color: #ffffff; /* Màu chữ: Trắng */
+}
+
+/* * Plan - Màu xanh lá cây, nhạt */
+.type-plan {
+  background-color: #4caf50; /* Màu nền: Xanh lá cây */
+  color: #ffffff; /* Màu chữ: Trắng */
+}
+
+/* * Deadline - Màu cam sáng, nổi bật */
+.type-deadline {
+  background-color: #ff9800; /* Màu nền: Cam sáng */
+  color: #ffffff; /* Màu chữ: Trắng */
+}
+
+/* * Important - Màu đỏ nổi bật */
+.type-important {
+  background-color: #e53935; /* Màu nền: Đỏ */
+  color: #ffffff; /* Màu chữ: Trắng */
+}
+
+/* * Style cho các thành phần form */
+.form-select,
+.form-control {
+  background-color: #3e3e42;
+  border: 1px solid #4e4e52;
+  color: #e0e0e0;
+}
+
+.form-select:focus,
+.form-control:focus {
+  background-color: #3e3e42;
+  color: #e0e0e0;
+  border-color: #0e639c;
+  box-shadow: 0 0 0 0.25rem rgba(14, 99, 156, 0.25);
+}
+
+.form-label {
+  color: #b7b7b7;
+}
+
+/* * Trạng thái khi không có ghi chú */
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 2rem;
+  color: #b7b7b7;
+}

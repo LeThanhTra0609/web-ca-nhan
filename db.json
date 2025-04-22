@@ -1,0 +1,91 @@
+{
+  "notes": [
+    {
+      "id": "1",
+      "title": "Học React Router",
+      "content": "Tìm hiểu cách tạo router và nested route",
+      "type": "plan",
+      "tags": [
+        "học tập",
+        "kiến thức"
+      ],
+      "createdAt": "2025-04-16T08:00:00+07:00",
+      "deadline": null,
+      "completed": false
+    },
+    {
+      "id": "2",
+      "title": "Nộp báo cáo tuần",
+      "content": "Hạn chót thứ sáu tuần này",
+      "type": "deadline",
+      "tags": [
+        "công việc",
+        "học tập"
+      ],
+      "createdAt": "2025-04-15T09:15:00+07:00",
+      "deadline": "2025-04-19T23:59:00+07:00",
+      "completed": false
+    },
+    {
+      "id": "3",
+      "title": "Mua linh kiện ESP8266",
+      "content": "Servo, điện trở, board test",
+      "type": "reminder",
+      "tags": [
+        "mẹo vặt"
+      ],
+      "createdAt": "2025-04-14T11:45:00+07:00",
+      "deadline": null,
+      "completed": true
+    },
+    {
+      "id": "5",
+      "title": "Xem lại bài Graph trong Java",
+      "content": "Ôn phần DFS, BFS và thuật toán Kruskal",
+      "type": "plan",
+      "tags": [
+        "học tập",
+        "kiến thức"
+      ],
+      "createdAt": "2025-04-17T13:20:00+07:00",
+      "deadline": null,
+      "completed": false
+    },
+    {
+      "id": "6",
+      "title": "Hạn nộp form học phần",
+      "content": "Chỉ còn 2 ngày!",
+      "type": "deadline",
+      "tags": [
+        "học tập"
+      ],
+      "createdAt": "2025-04-13T10:00:00+07:00",
+      "deadline": "2025-04-18T17:00:00+07:00",
+      "completed": false
+    },
+    {
+      "id": "b6e7",
+      "title": "Áo thun trà đẹp trai",
+      "content": "===",
+      "type": "deadline",
+      "tags": [
+        "ooo"
+      ],
+      "deadline": null,
+      "completed": false,
+      "createdAt": "2025-04-22T13:23:55.579Z"
+    },
+    {
+      "id": "e2dd",
+      "title": "Áo thun trà đẹp trai",
+      "content": "oo",
+      "type": "important",
+      "tags": [
+        "o"
+      ],
+      "deadline": null,
+      "completed": false,
+      "createdAt": "2025-04-22T13:26:45.147Z"
+    }
+  ]
+}

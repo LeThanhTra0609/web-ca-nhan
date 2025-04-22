@@ -3,8 +3,8 @@ import '../styles/Layout.css';
 
 function Footer() {
   return (
-    <footer className=" text-light pt-5 pb-3 mt-5 border-top fixed-bottom">
-      <div className="container">
+    <footer className=" text-light pt-5 pb-3 mt-5 border-top w-100">
+      <div className="container-fluid">
         <div className="row">
           {/* Thông tin cá nhân */}
           <div className="col-md-4 mb-4">
