@@ -5,10 +5,7 @@
       "title": "Học React Router",
       "content": "Tìm hiểu cách tạo router và nested route",
       "type": "plan",
-      "tags": [
-        "học tập",
-        "kiến thức"
-      ],
+      "tags": ["học tập", "kiến thức"],
       "createdAt": "2025-04-16T08:00:00+07:00",
       "deadline": null,
       "completed": false
@@ -18,10 +15,7 @@
       "title": "Nộp báo cáo tuần",
       "content": "Hạn chót thứ sáu tuần này",
       "type": "deadline",
-      "tags": [
-        "công việc",
-        "học tập"
-      ],
+      "tags": ["công việc", "học tập"],
       "createdAt": "2025-04-15T09:15:00+07:00",
       "deadline": "2025-04-19T23:59:00+07:00",
       "completed": false
@@ -31,9 +25,7 @@
       "title": "Mua linh kiện ESP8266",
       "content": "Servo, điện trở, board test",
       "type": "reminder",
-      "tags": [
-        "mẹo vặt"
-      ],
+      "tags": ["mẹo vặt"],
       "createdAt": "2025-04-14T11:45:00+07:00",
       "deadline": null,
       "completed": true
@@ -43,10 +35,7 @@
       "title": "Xem lại bài Graph trong Java",
       "content": "Ôn phần DFS, BFS và thuật toán Kruskal",
       "type": "plan",
-      "tags": [
-        "học tập",
-        "kiến thức"
-      ],
+      "tags": ["học tập", "kiến thức"],
       "createdAt": "2025-04-17T13:20:00+07:00",
       "deadline": null,
       "completed": false
@@ -56,9 +45,7 @@
       "title": "Hạn nộp form học phần",
       "content": "Chỉ còn 2 ngày!",
       "type": "deadline",
-      "tags": [
-        "học tập"
-      ],
+      "tags": ["học tập"],
       "createdAt": "2025-04-13T10:00:00+07:00",
       "deadline": "2025-04-18T17:00:00+07:00",
       "completed": false
@@ -68,9 +55,7 @@
       "title": "Áo thun trà đẹp trai",
       "content": "===",
       "type": "deadline",
-      "tags": [
-        "ooo"
-      ],
+      "tags": ["ooo"],
       "deadline": null,
       "completed": false,
       "createdAt": "2025-04-22T13:23:55.579Z"
@@ -80,12 +65,58 @@
       "title": "Áo thun trà đẹp trai",
       "content": "oo",
       "type": "important",
-      "tags": [
-        "o"
-      ],
+      "tags": ["o"],
       "deadline": null,
       "completed": false,
       "createdAt": "2025-04-22T13:26:45.147Z"
+    }
+  ],
+
+  "posts": [
+    {
+      "id": 1,
+      "title": "Cách sử dụng useEffect trong React",
+      "summary": "Hướng dẫn chi tiết về hook useEffect trong React, từ cơ bản đến nâng cao",
+      "tags": ["React", "Hooks", "Frontend"],
+      "createdAt": "2025-04-24",
+      "thumbnail": "/assets/react-hooks.jpg",
+      "content": "<h2 class='mb-4'>Giới thiệu về useEffect</h2><p class='lead'><strong>useEffect</strong> là một trong những hook quan trọng nhất trong React, cho phép bạn thực hiện side effects trong function components.</p><div class='alert alert-info'><strong>Mẹo:</strong> useEffect thay thế cho componentDidMount, componentDidUpdate và componentWillUnmount trong class components.</div><h3 class='mt-4'>Cú pháp cơ bản</h3><pre class='bg-dark text-light p-3 rounded'><code>useEffect(() => {\n  // Code thực thi sau mỗi lần render\n  return () => {\n    // Cleanup function (optional)\n  };\n}, [dependencies]);</code></pre><h3 class='mt-4'>Ví dụ thực tế</h3><p>Dưới đây là ví dụ về fetch data với useEffect:</p><pre class='bg-dark text-light p-3 rounded'><code>useEffect(() => {\n  const fetchData = async () => {\n    const response = await fetch('api/data');\n    const data = await response.json();\n    setData(data);\n  };\n  \n  fetchData();\n  \n  return () => {\n    // Hủy request nếu component unmount\n  };\n}, []);</code></pre>"
+    },
+    {
+      "id": 2,
+      "title": "Cách tạo project React với Vite và cài đặt các thư viện cần thiết",
+      "summary": "Hướng dẫn chi tiết từng bước tạo project React với Vite và cài đặt Bootstrap, React Router, Axios, và JSON Server.",
+      "tags": ["React", "Vite", "Bootstrap", "Router", "Axios", "JSON Server"],
+      "createdAt": "2025-04-26",
+      "thumbnail": "/assets/vite-react-bootstrap.jpg",
+      "content": "<h2 class='mb-4'>Tạo Project React với Vite và cài đặt các thư viện cần thiết</h2><p class='lead'>Dưới đây là quy trình đầy đủ để tạo một dự án React hiện đại với Vite và các thư viện phổ biến như Bootstrap, React Router, Axios, và JSON Server.</p><h3 class='mt-4'>✅ Bước 1: Tạo project mới với Vite</h3><pre class='bg-dark text-light p-3 rounded'><code># Tạo project mới với Vite\nnpm create vite@latest my-react-app --template react</code></pre><p>Sau khi tạo xong, di chuyển vào thư mục dự án:</p><pre class='bg-dark text-light p-3 rounded'><code>cd my-react-app</code></pre><h3 class='mt-4'>✅ Bước 2: Cài đặt các thư viện cần thiết</h3><p>Cài đặt Bootstrap:</p><pre class='bg-dark text-light p-3 rounded'><code>npm install bootstrap</code></pre><p>Cài đặt React Router:</p><pre class='bg-dark text-light p-3 rounded'><code>npm install react-router-dom</code></pre><p>Cài đặt Axios (để gọi API):</p><pre class='bg-dark text-light p-3 rounded'><code>npm install axios</code></pre><p>Cài đặt JSON Server (để mock dữ liệu API):</p><pre class='bg-dark text-light p-3 rounded'><code>npm install json-server</code></pre><h3 class='mt-4'>✅ Bước 3: Cấu hình JSON Server</h3><p>Tạo file <code>db.json</code> ở thư mục gốc của dự án với dữ liệu mẫu:</p><pre class='bg-dark text-light p-3 rounded'><code>{\n  \"posts\": [\n    { \"id\": 1, \"title\": \"Bài viết mẫu\", \"content\": \"Nội dung bài viết\" }\n  ]\n}</code></pre><p>Chạy JSON Server:</p><pre class='bg-dark text-light p-3 rounded'><code>npx json-server --watch db.json --port 5000</code></pre><h3 class='mt-4'>✅ Bước 4: Sử dụng Bootstrap trong project</h3><p>Mở file <code>main.jsx</code> và import Bootstrap vào đầu file:</p><pre class='bg-dark text-light p-3 rounded'><code>import 'bootstrap/dist/css/bootstrap.min.css';</code></pre><h3 class='mt-4'>✅ Bước 5: Cấu hình React Router</h3><p>Tạo file <code>App.jsx</code> với cấu trúc route:</p><pre class='bg-dark text-light p-3 rounded'><code>import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';\n\nfunction App() {\n  return (\n    <Router>\n      <Routes>\n        <Route path='/' element={<Home />} />\n        <Route path='/posts' element={<Posts />} />\n      </Routes>\n    </Router>\n  );\n}\n\nexport default App;</code></pre><h3 class='mt-4'>✅ Bước 6: Gọi API với Axios</h3><p>Sử dụng Axios để lấy dữ liệu từ JSON Server:</p><pre class='bg-dark text-light p-3 rounded'><code>import axios from 'axios';\n\nuseEffect(() => {\n  axios.get('http://localhost:5000/posts')\n    .then(response => {\n      console.log(response.data);\n    })\n    .catch(error => {\n      console.error('Có lỗi xảy ra:', error);\n    });\n}, []);</code></pre><h3 class='mt-4'>✅ Bước 7: Chạy project</h3><p>Chạy dự án:</p><pre class='bg-dark text-light p-3 rounded'><code>npm run dev</code></pre><p>Với các bước trên, bạn đã tạo thành công một dự án React với Vite, tích hợp Bootstrap, React Router, Axios, và JSON Server. Bạn có thể bắt đầu phát triển ứng dụng của mình!</p>"
+    },
+    {
+      "id": 3,
+      "title": "Mastering CSS Flexbox",
+      "summary": "Hướng dẫn toàn diện về Flexbox với các ví dụ thực tế",
+      "tags": ["CSS", "Flexbox", "Layout"],
+      "createdAt": "2025-04-20",
+      "thumbnail": "/assets/flexbox.jpg",
+      "content": "<h2 class='mb-4'>Flexbox là gì?</h2><p class='lead'>Flexbox là một mô hình layout trong CSS giúp sắp xếp các phần tử một cách linh hoạt và responsive.</p><div class='alert alert-warning'><strong>Lưu ý:</strong> Flexbox hoạt động tốt nhất với layout một chiều (row hoặc column).</div><h3 class='mt-4'>Các thuộc tính chính</h3><div class='table-responsive'><table class='table table-dark table-striped'><thead><tr><th>Thuộc tính</th><th>Mô tả</th></tr></thead><tbody><tr><td><code>display: flex</code></td><td>Kích hoạt flex container</td></tr><tr><td><code>flex-direction</code></td><td>Xác định hướng (row/column)</td></tr><tr><td><code>justify-content</code></td><td>Căn chỉnh theo main axis</td></tr><tr><td><code>align-items</code></td><td>Căn chỉnh theo cross axis</td></tr></tbody></table></div>"
+    },
+    {
+      "id": 4,
+      "title": "Quy trình push code lên nhánh mới trong GitHub",
+      "summary": "Hướng dẫn chi tiết từng bước push code lên một nhánh mới trong GitHub cho dự án",
+      "tags": ["Git", "GitHub", "Version Control"],
+      "createdAt": "2025-04-26",
+      "thumbnail": "/assets/git-push-branch.jpg",
+      "content": "<h2 class='mb-4'>Quy trình push code lên một nhánh mới</h2><p class='lead'>Dưới đây là hướng dẫn từng bước để đẩy (push) code lên một nhánh mới trong GitHub:</p><div class='steps'><h3 class='mt-4'>✅ Bước 1: Mở terminal (hoặc Git Bash)</h3><h3 class='mt-4'>✅ Bước 2: Kiểm tra các thay đổi</h3><pre class='bg-dark text-light p-3 rounded'><code>git status</code></pre><h3 class='mt-4'>✅ Bước 3: Thêm các file vào staging</h3><pre class='bg-dark text-light p-3 rounded'><code>git add .</code></pre><h3 class='mt-4'>✅ Bước 4: Commit các thay đổi</h3><pre class='bg-dark text-light p-3 rounded'><code>git commit -m \"Thông điệp commit\"</code></pre><h3 class='mt-4'>✅ Bước 5: Tạo nhánh mới và chuyển sang nhánh đó</h3><pre class='bg-dark text-light p-3 rounded'><code>git checkout -b ten-nhanh-moi</code></pre><h3 class='mt-4'>✅ Bước 6: Push nhánh mới lên GitHub</h3><pre class='bg-dark text-light p-3 rounded'><code>git push origin ten-nhanh-moi</code></pre></div><div class='alert alert-warning mt-4'><strong>💡 Lưu ý:</strong><ul><li>Thay <code>ten-nhanh-moi</code> bằng tên nhánh bạn muốn tạo, ví dụ: <code>feature/login-page</code>.</li><li>Đảm bảo bạn đã cấu hình remote đến GitHub từ trước.</li></ul></div>"
+    },
+    {
+      "id": 5,
+      "title": "Cách merge nhánh mới vào nhánh main trong GitHub",
+      "summary": "Hướng dẫn từng bước gộp nhánh mới vào nhánh main trong GitHub dễ hiểu và chi tiết",
+      "tags": ["Git", "GitHub", "Version Control"],
+      "createdAt": "2025-04-26",
+      "thumbnail": "/assets/git-merge-branch.jpg",
+      "content": "<h2 class='mb-4'>Quy trình merge nhánh mới vào main</h2><p class='lead'>Để gộp (merge) một nhánh mới vào nhánh <code>main</code>, bạn làm theo các bước sau:</p><div class='steps'><h3 class='mt-4'>✅ Bước 1: Chuyển về nhánh <code>main</code></h3><pre class='bg-dark text-light p-3 rounded'><code>git checkout main</code></pre><h3 class='mt-4'>✅ Bước 2: Cập nhật nhánh <code>main</code> mới nhất từ GitHub</h3><pre class='bg-dark text-light p-3 rounded'><code>git pull origin main</code></pre><h3 class='mt-4'>✅ Bước 3: Gộp nhánh mới vào <code>main</code></h3><pre class='bg-dark text-light p-3 rounded'><code>git merge ten-nhanh-moi</code></pre><h3 class='mt-4'>✅ Bước 4: Push lên GitHub</h3><pre class='bg-dark text-light p-3 rounded'><code>git push origin main</code></pre></div><div class='alert alert-warning mt-4'><strong>📌 Lưu ý:</strong><ul><li>Nếu có xung đột (conflict), Git sẽ yêu cầu bạn giải quyết thủ công trước khi tiếp tục.</li><li>Sau khi merge thành công, bạn có thể xóa nhánh cũ nếu không còn cần:</li></ul><pre class='bg-dark text-light p-3 rounded'><code>git branch -d ten-nhanh-moi    # Xóa nhánh local\n\ngit push origin --delete ten-nhanh-moi  # Xóa nhánh trên GitHub</code></pre></div>"
     }
   ]
 }

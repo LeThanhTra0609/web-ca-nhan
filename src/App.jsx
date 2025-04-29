@@ -8,6 +8,8 @@ import Navbar from './components/Navbar';
 // import Footer from './components/Footer';
 // import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
+import Posts from './pages/Posts';
+import PostDetail from './pages/PostDetail';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -19,6 +21,8 @@ function App() {
       <div className="container custom-container">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/posts" element={<Posts />} />
+          <Route path="/posts/:id" element={<PostDetail />} />
           {/* <Route path="/product/:id" element={<ProductDetailPage />} />
             <Route path="/admin" element={<AdminPage />} />
             <Route path="/about-us" element={<AboutUs />} />
